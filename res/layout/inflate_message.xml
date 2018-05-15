@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <com.unos.crescentapp.view.CircleImageView
+            android:id="@+id/inflate_message_profile_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/inflater_message_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/inflate_message_profile_image"
+            android:text="Omar"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!--
+             <TextView 
+            android:id="@+id/inflater_message_txtvw_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="0 min ago"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/darker_gray"
+             />
+        -->
+
+        <TextView
+            android:id="@+id/inflater_message_txtvw_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inflater_message_user_name"
+            android:layout_below="@+id/inflater_message_user_name"
+            android:text="Here text can appaire"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/inflate_message_profile_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/inflate_message_profile_image"
+            android:layout_alignTop="@+id/inflate_message_profile_image"
+            android:src="@drawable/red_circle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

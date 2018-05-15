@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dip">
+
+        <ImageView
+            android:id="@+id/inflater_chatlist_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/pflist_pic2"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/inflater_chatlist_profile_image"
+            android:text="Aaban"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/Textplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextName"
+            android:layout_below="@+id/TextName"
+            android:background="@null"
+            android:text="I m surprised too!!"
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</LinearLayout>

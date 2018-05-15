@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/rl1"
+      android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:paddingTop="5dip"
+       android:paddingBottom="5dip"
+       >
+
+       <com.unos.crescentapp.view.CircleImageView
+           android:id="@+id/inflater_chat_receiver_imgvw"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:layout_alignParentRight="true"
+           
+          android:layout_marginRight="5dip"
+           android:src="@drawable/pflist_pic2" />
+
+       <TextView
+           android:id="@+id/inflater_receiver_chat_txtvw_msg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignTop="@+id/inflater_chat_receiver_imgvw"
+           android:layout_marginRight="10dp"
+           android:layout_toLeftOf="@+id/inflater_chat_receiver_imgvw"
+           android:background="@drawable/chat_recieve"
+           android:gravity="center"
+           android:text="Awesome! Tell me more!"
+           android:textColor="@android:color/white"
+           android:textSize="11sp" 
+           android:padding="5dip"
+            android:maxWidth="250dip"/>
+		<!-- <ImageView 
+		    android:id="@+id/inflater_tv_chat_receiver_tick"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/tick_receive"
+           android:layout_marginTop="2dip"
+           android:layout_marginRight="5dip"
+           android:layout_toLeftOf="@+id/inflater_chat_receiver_txtvw_time"
+           android:layout_below="@+id/inflater_receiver_chat_txtvw_msg"/> -->
+       <TextView
+           android:id="@+id/inflater_chat_receiver_txtvw_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/inflater_receiver_chat_txtvw_msg"
+           android:layout_below="@+id/inflater_receiver_chat_txtvw_msg"
+           android:hint="3 mins ago"
+           android:textSize="15sp" />
+
+   </RelativeLayout>
+

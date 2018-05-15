@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:orientation="horizontal" >
+
+    <com.unos.crescentapp.view.CircleImageView
+        android:id="@+id/inflate_notification_imgvw"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        />
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:paddingLeft="5dip"
+       android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/inflate_notification_txtvw_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inflate_notification_txtvw_message"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:text="November 19 at 2:00 pm"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+             >
+        </TextView>
+
+        <TextView
+            android:id="@+id/inflate_notification_txtvw_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Omar likes your photo"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

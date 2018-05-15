@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- android:background="#FB5643" -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+    <!-- android:layout_above="@+id/dialog_viewpager_indicator" -->
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/dialog_viewpager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_login_rl"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dip" />
+
+    <LinearLayout
+        android:id="@+id/user_login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/activity_user_login_btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                android:id="@+id/activity_user_login_tv_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="15dip"
+                android:text="Sign Up with Email"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activity_user_login_tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="15dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="15dip"
+                android:text="Log In with Email"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!--
+              android:paddingTop="60dip"
+            android:paddingBottom="20dip"
+        -->
+
+    </LinearLayout>
+
+</RelativeLayout>

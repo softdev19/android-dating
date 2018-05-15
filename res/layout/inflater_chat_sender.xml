@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:id="@+id/rl1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <com.unos.crescentapp.view.CircleImageView
+            android:id="@+id/inflater_chat_sender_imgvw"
+            android:layout_height="40dip"
+            android:layout_width="40dip"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/inflater_chat_sender_txtvw_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/inflater_chat_sender_imgvw"
+            android:background="@drawable/chat_send"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="Also is one of the most applauded and respected artisist that came out of Detroit." 
+            android:maxWidth="250dip"/>
+       <TextView 
+           android:id="@+id/inflater_chat_sender_txtvw_time"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:hint="5 mins ago"
+           android:layout_below="@+id/inflater_chat_sender_txtvw_msg"
+           android:textSize="15sp"
+           android:layout_marginLeft="60dip"
+           
+           />
+
+    </RelativeLayout>
+    

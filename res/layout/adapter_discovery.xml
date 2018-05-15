@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="480dip"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/adapter_discovery_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@null"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/adapter_discovery_imgbtn_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip"
+            android:src="@drawable/ic_like_normal"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/adapter_discovery_profile_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button_right"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/adapter_discovery_profile_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adapter_discovery_txtvw_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/adapter_discovery_txtvw_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/adapter_discovery_txtvw_about_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@android:color/secondary_text_light"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!--
+         <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_gravity="center_horizontal">
+    -->
+
+    <LinearLayout
+        android:id="@+id/adapter_discovery_lnr_lyt_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/Imageicon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_politics"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/iconName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imageicon1"
+                android:text="Politics"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/Imageicon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_sports"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/iconName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imageicon2"
+                android:text="Sports"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/Imageicon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_evnts"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/iconName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imageicon3"
+                android:text="Travel"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        -->
+    </LinearLayout>
+
+</LinearLayout>

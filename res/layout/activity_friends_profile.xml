@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar" >
+
+        <TextView
+            android:id="@+id/activity_friends_profile_tv_friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/activity_friends_profile_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip"
+            android:text="DONE"
+            android:textColor="@drawable/bg_btn_next"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlactivity_friends_profile112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_friends_profile_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dip" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/activity_friends_profile_pager_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_friends_profile_pager"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_friends_profile_tv_name_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dip"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/activity_friends_profile_tv_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_friends_profile_txtvw_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dip"
+                android:textSize="16sp" />
+
+            <!--
+     <HorizontalScrollView
+    android:id="@+id/activity_friends_profile_hori_scroll_interest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="15dip"
+    android:layout_marginTop="15dip"
+    android:paddingLeft="10dip"
+         android:paddingRight="10dip"
+    android:scrollbars="none" >
+            -->
+
+            <LinearLayout
+                android:id="@+id/activity_friends_profile_lnr_lyt_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:visibility="visible" />
+
+            <!-- </HorizontalScrollView> -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

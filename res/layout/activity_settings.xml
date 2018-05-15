@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar" >
+
+        <TextView
+            android:id="@+id/activity_settings_txtvw_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/activity_settings_btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:paddingTop="15dip"
+             android:layout_centerVertical="true"
+            android:text="DONE"
+            android:textColor="@drawable/bg_btn_next"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/activity_settings_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip"
+            android:src="@drawable/back_button" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/activity_settings_txtvw_new_matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="NEW MATCHES"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/activity_settings_tgbtn_new_matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/bg_settings_toggle_button"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/activity_settings_txtvw_new_matches"
+                    android:layout_marginLeft="20dip"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/activity_settings_txtvw_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="20dip"
+                    android:text="MESSAGES"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/activity_settings_tgbtn_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/bg_settings_toggle_button"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F7F7F7" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_settings_rl_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <ImageView
+                    android:id="@+id/activity_settings_privacy_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dip"
+                    android:padding="5dip"
+                    android:src="@drawable/btn_next" />
+
+                <TextView
+                    android:id="@+id/activity_settings_text_view_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="PRIVACY POLICY"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/activity_settings_text_view_privacy"
+                    android:layout_marginLeft="20dip"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_settings_rl_terms_services"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/activity_settings_text_view_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="TERMS OF SERVICE"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/activity_settings_iv_terms_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dip"
+                    android:src="@drawable/btn_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F7F7F7" >
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/activity_settings_btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:padding="20dip"
+                android:text="LOGOUT"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="#F7F7F7" />
+
+            <Button
+                android:id="@+id/activity_settings_btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="DELETE ACCOUNT"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

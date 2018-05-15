@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation,MissingTranslation">
+
+    <string name="next">NEXT</string>
+    <string name="app_name" tools:ignore="MissingTranslation,MissingTranslation,MissingTranslation">Crescent</string>
+    <string name="hello_world" tools:ignore="MissingTranslation,MissingTranslation,MissingTranslation">Hello world!</string>
+    <string name="action_settings" tools:ignore="MissingTranslation,MissingTranslation,MissingTranslation">Settings</string>
+    <string name="fashion" tools:ignore="MissingTranslation,MissingTranslation">Fashion</string>
+    <string name="sports" tools:ignore="MissingTranslation,MissingTranslation">Sports</string>
+    <string name="politics" tools:ignore="MissingTranslation">Politics</string>
+    <string name="music" tools:ignore="MissingTranslation">music</string>
+    <string name="fitness">Fitness</string>
+    <string name="tech" tools:ignore="MissingTranslation">Tech</string>
+    <string name="food" tools:ignore="MissingTranslation">Food</string>
+    <string name="business" tools:ignore="MissingTranslation">Business</string>
+    <string name="art" tools:ignore="MissingTranslation">Art</string>
+    <string name="movies">Movies</string>
+    <string name="travel" tools:ignore="MissingTranslation,MissingTranslation">Travel</string>
+    <string name="events" tools:ignore="MissingTranslation">Events</string>
+    <string name="find_people_near_you" tools:ignore="MissingTranslation,MissingTranslation">Finding people near you</string>
+    <string name="find_people_near_description" tools:ignore="MissingTranslation,MissingTranslation">Let us know your location so we can find people  you will like nearby</string>
+    <string name="allow_use_my_location" tools:ignore="MissingTranslation">ALLOW USE MY LOCATION</string>
+    <string name="login_with_facebook" tools:ignore="MissingTranslation">LOGIN WITH FACEBOOK</string>
+    <string name="sign_in_using_email_id" tools:ignore="MissingTranslation">Sign in using your email address &amp;</string>
+    <string name="ss" tools:ignore="MissingTranslation"><![CDATA[<b>Bold.</b> <u>Underlined.</u> <i>Italic.</i> <big>Big.</big>]]></string>
+    <string name="edit_profile" tools:ignore="MissingTranslation">Edit Profile</string>
+    <string name="facebook_app_id" tools:ignore="MissingTranslation,MissingTranslation">1601353700150069</string>
+    <string name="providers" tools:ignore="MissingTranslation">Providers</string>
+    <string name="network_not_avail" tools:ignore="MissingTranslation,MissingTranslation">Network Not Available</string>
+    <string name="discover_potential" tools:ignore="MissingTranslation">Check out \ninteresting Muslims</string>
+    <string name="anonymously_show">Swipe right to anonymously \nshow interest</string>
+    <string name="if_you_both_like_each_other">If you both like each other, \n we\'ll connect you</string>
+    <string name="you_and_other_like_each_other">You and %s like each other.\nThe rest is up to you</string>
+    <string name="sign_up_term_condition">By clicking \'Done\',  you are agreeing</string>
+    <string name="tell_us_a_little_about_yourself">Tell us about your self and who you\'re looking for</string>
+    <string name="age_limitation_for_user_dialog_message"><b>User must be 17 or older to use Crescent.</b>\n If you continue, We will delete \n your account</string>
+    <string name="about_me_and_who_i_want">ABOUT ME &amp; WHO I WANT </string>
+    <string name="privacy_amp">&amp;</string>
+    <string name="forgot_password"> password.</string>
+    <string name="title_activity_pdfviewer">PDFViewerActivity</string>
+	<string name="forgot_pass">Forgot Password?</string>
+	<string name="unable_connect">Unable To Connect to Server</string>
+	<string name="contact_subject">Salaam Crescent! I Have Something to Tell You.r</string>
+</resources>

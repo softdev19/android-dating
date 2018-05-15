@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar" >
+
+        <TextView
+            android:id="@+id/activity_my_profile_txtvw_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="My Profile"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/activity_my_profile_imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip"
+            android:src="@drawable/back_button" />
+
+        <Button
+            android:id="@+id/activity_my_profile_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="15dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip"
+            android:text="EDIT"
+            android:textColor="@drawable/bg_btn_next"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_my_profile112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/activity_my_profile_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dip" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/activity_my_profile_pager_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_my_profile_pager"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="20dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_my_profile_tv_name_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/activity_my_profile_tv_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/activity_my_profile_txtvw_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dip"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <!-- android:hint="Extreme writer,hardcore introver,Music lover,family is everything to me,Interest nerd " -->
+            <!--
+      <HorizontalScrollView 
+     android:id="@+id/activity_my_profile_hori_scroll_interest"
+     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+         android:paddingRight="10dip"
+         android:layout_marginTop="15dip"
+         android:layout_marginBottom="15dip"
+         android:scrollbars="none">
+            -->
+
+            <LinearLayout
+                android:id="@+id/activity_my_profile_lnr_lyt_interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:visibility="visible" />
+
+            <!-- </HorizontalScrollView> -->
+            <!--
+        android:gravity="center_horizontal|bottom" 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_my_profile_interest_iv_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_politics"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/activity_my_profile_interest_tv_icon_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_my_profile_interest_iv_icon1"
+                android:text="Politics"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_my_profile_interest_iv_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_sports"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/activity_my_profile_interest_tv_icon_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_my_profile_interest_iv_icon2"
+                android:text="Sports"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/activity_my_profile_interest_iv_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/icon_evnts"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/activity_my_profile_interest_tv_icon_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_my_profile_interest_iv_icon3"
+                android:text="Travel"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+            -->
+
+
+            <!-- </HorizontalScrollView> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

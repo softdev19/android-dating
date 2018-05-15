@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/activity_location_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bar"
+        android:layout_alignParentTop="true"
+         >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/logo"
+            
+             />
+
+        <!-- <ImageView
+            android:id="@+id/activity_location_imgvw_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/button_back" /> -->
+    </RelativeLayout>
+
+   <com.unos.crescentapp.view.RippleBackground
+       android:id="@+id/activity_location_ripple_background"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/activity_location_topbar"
+       app:rb_color="#FB5643"
+       app:rb_duration="3000"
+       app:rb_radius="32dp"
+       app:rb_rippleAmount="6"
+       app:rb_scale="6" >
+        
+        <com.unos.crescentapp.view.CircleImageView
+            android:id="@+id/activity_location_imgvw_user"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher" 
+             app:border_width="2dp"
+            app:border_color="#C3C3C3"/>
+        
+    <TextView 
+            android:id="@+id/activity_location_txtvw_find_people"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/find_people_near_you"
+            android:layout_below="@+id/activity_location_imgvw_user"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dip"/>
+  	</com.unos.crescentapp.view.RippleBackground>
+    
+    
+</RelativeLayout>

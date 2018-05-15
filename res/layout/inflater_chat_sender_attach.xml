@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <com.unos.crescentapp.view.CircleImageView
+            android:id="@+id/inflater_chat_sender_attach_imgvw_user"
+            android:layout_height="40dip"
+            android:layout_width="40dip"
+            android:src="@drawable/ic_launcher"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip" >
+	
+    <ImageView
+        android:id="@+id/inflater_chat_sender_attach_imgvw_att"
+        android:layout_width="150dip"
+        android:layout_height="150dip" 
+        android:scaleType="centerCrop"
+        android:padding="10dip"
+        android:background="@drawable/chat_send"/>
+    <ProgressBar
+        android:id="@+id/inflater_chat_sender_attach_progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    </RelativeLayout>
+    </LinearLayout>
+		<TextView 
+           android:id="@+id/inflater_chat_sender_attach_txtvw_time"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:hint="5 mins ago"
+           android:textSize="15sp"
+           android:layout_marginLeft="60dip"/>
+</LinearLayout>

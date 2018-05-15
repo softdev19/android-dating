@@ -1,0 +1,99 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	
+	<ImageView
+	    android:id="@+id/activity_mutual_match_imgvw"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/match_bg"/>
+<com.unos.crescentapp.view.CircleImageView
+     android:id="@+id/activity_mutual_match_imgvw_user"
+     android:layout_width="80dip"
+     android:layout_height="80dip"
+     android:layout_centerVertical="true"
+     android:layout_alignParentLeft="true"
+     app:border_color="#FFFFFF"
+     app:border_width="2dip" 
+     android:layout_marginLeft="50dip"
+     android:src="@drawable/add_your_photo"/>
+ <com.unos.crescentapp.view.CircleImageView
+     android:id="@+id/activity_mutual_match_imgvw_friend"
+     android:layout_width="80dip"
+     android:layout_height="80dip"
+     android:layout_centerVertical="true"
+     android:layout_alignParentRight="true"
+     app:border_color="#FFFFFF"
+     app:border_width="2dip" 
+     android:layout_marginRight="50dip"
+     android:src="@drawable/add_your_photo"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/activity_mutual_match_txtvw_mutual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Mutual Match"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="25dip" />
+	<TextView
+        android:id="@+id/activity_mutual_match_txtvw_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mutual Match"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dip"/>
+	<TextView
+        android:id="@+id/activity_mutual_match_txtvw_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mutual Match"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dip"/>
+	
+	<Button 
+	    android:id="@+id/activity_mutual_match_btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND MESSAGE"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_continue"
+         android:textSize="16sp"
+         android:padding="10dip"
+         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"/>
+	<Button
+        android:id="@+id/activity_mutual_match_btn_may"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maybe Later"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:padding="15dip"
+        android:background="@android:color/transparent"/>
+</LinearLayout>
+</ScrollView>
